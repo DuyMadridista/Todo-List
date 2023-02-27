@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/61e1e4c667.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <img class="anh1" src="anh1.png" alt="">
+                    <div class="decription">
+                        Let's get shit done!
+                        <img class="anh2" src="anh2.png" alt="">
+                    </div>
+                </div>
+                <div id="add-btn" class="AddBtn">
+                    <i class="fa-sharp fa-regular fa-plus"></i>
+                    <div>New Task</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mainBody" >
+        <div class="container">
+            <div class="mainBody-inner">
+                <div class="List-form">
+                    <div class=" status Todo">To Do
+                        <div class="list-count countTodo">0</div>
+                    </div>
+                    <div class="TodoList">
+                    </div>
+                </div>
+                <div class="List-form">
+                    <div class="status Doing">Doing
+                        <div class="list-count countDoing">0</div>
+                    </div>
+                    <div class="DoingList">
+                        
+                    </div>
+                </div>
+                <div class="List-form">
+                    <div class="status Done">Done
+                        <div class="list-count countDone">0</div>
+                    </div>
+                    <div class="DoneList">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="adding-form" class="adding-form">
+        <form action="">
+            <div id="close-Btn" class="close-Btn">
+                    <i  class="fa-solid fa-close "></i>
+            </div>
+            <div class="adding-form-title">
+                <label for="">Add New Todo</label>
+            </div>
+            <input name="category" id="Category" type="text" placeholder="Category" required>
+            <input name="title" id="Title" type="text" placeholder="Title" required>
+            <textarea name="description" id="Description" cols="30" rows="5" placeholder="Description" required></textarea>
+            <input name="date" id="Deadline" type="date" placeholder="Deadline" required>
+            <input name="submit" type="submit" value="submit">
+        </form>
+    </div>
+    <div id="editing-form" class="adding-form">
+        <form action="">
+            <div id="close-edit-Btn" class="close-Btn">
+                    <i  class="fa-solid fa-close "></i>
+            </div>
+            <div class="adding-form-title">
+                <label for="">Edit Todo</label>
+            </div>
+            <input name="categoryEdit" class="input" id="Category" type="text" placeholder="Category" required>
+            <input name="titleEdit" class="input" id="Title" type="text" placeholder="Title" required>
+            <textarea name="descriptionEdit" id="Description" cols="30" rows="5" placeholder="Description" required></textarea>
+            <div class="radioBtn" style="flex-direction: row;">
+                <div class="radioChoise">
+                    <input name="status" type="radio" value="Todo" />Todo
+                </div>
+                <div class="radioChoise"><input name="status" type="radio" value="Doing" />Doing</div>
+                <div class="radioChoise"><input name="status" type="radio" value="Done" />Done</div>
+            </div>
+            <button  id="AddEditBtn" style="width: 50%; padding: 0.2rem; margin: 1rem;">Add</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
